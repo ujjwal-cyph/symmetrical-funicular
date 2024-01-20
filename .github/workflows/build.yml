@@ -16,6 +16,7 @@ jobs:
       image:  ${{ github.event.inputs.container-image }}
 
     strategy:
+      fail-fast: false
       matrix:
         tag: [v0.3.12, v0.3.28, v0.4.0, v0.4.1290, v0.4.1802, v0.4.1803, v0.4.2059, v0.4.2307, v0.4.267, v0.4.3075, v0.4.3328-internal-prod-tooling, v0.4.773, v0.4.9, v0.5.2048-test, v0.5.2304-rc, v0.5.2306, v0.5.2560-rc, v0.5.2560-rc1]
 
